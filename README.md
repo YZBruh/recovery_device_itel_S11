@@ -1,10 +1,13 @@
-# Recovery device tree for Itel S11
+# Custom recovery device tree for Itel S11
 
-```
-#
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+|Basic               |Spec Sheet                                                    |
+|--                  |--                                                            |
+|CPU                 |Quad-core 32NM (4x 1.3 GHz Cortex-A7)                         |
+|Chipset             |MediaTek MT6580                                               |
+|GPU                 |Mali-400MP2                                                   |
+|Memory              |1GB RAM                                                       |
+|Android Version     |6                                                             |
+|Storage             |8GB                                                           |
+
+### Device picture
+![iTel S11](https://droidafrica.net/wp-content/uploads/2021/10/itel-s11-specs.png)
