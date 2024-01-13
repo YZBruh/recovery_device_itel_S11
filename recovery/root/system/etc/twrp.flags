@@ -16,6 +16,10 @@
 /expdb          emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/expdb        flags=display=EXPDB;backup=1;flashimg=1
 /secro          emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/secro        flags=display=SECRO;backup=1;flashimg=1
 /seccfg         emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/seccfg       flags=display=SECCFG;backup=1;flashimg=1
+/flashinfo      emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/flashinfo    flags=display=Flashinfo;backup=1;flashimg=1
+/metadata       ext4     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/metadata     flags=display=MetaData;backup=1;flashimg=1
+/keystore       emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/keystore     flags=display=Keystore;backup=1;flashimg=1
+/oemkeystore    emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/oemkeystore  flags=display=OEMKeystore;backup=1;flashimg=1
 
 # External Partitions
 /external_sd    auto     /dev/block/mmcblk0p1         /dev/block/mmcblk0                    flags=display="MicroSD-Card";storage;wipeingui;removable
