@@ -11,3 +11,9 @@
 
 ### Device picture
 ![iTel S11](https://droidafrica.net/wp-content/uploads/2021/10/itel-s11-specs.png)
+
+### How to build
+```
+source build/envsetup.sh
+lunch omni_S11-eng && make recoveryimage
+```
