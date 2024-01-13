@@ -1,4 +1,4 @@
-# Android device tree for Itel itel S11 (S11)
+# Recovery device tree for Itel S11
 
 ```
 #
