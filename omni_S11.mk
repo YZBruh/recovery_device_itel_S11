@@ -6,7 +6,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -21,8 +21,3 @@ PRODUCT_MODEL := itel S11
 PRODUCT_MANUFACTURER := itel
 
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="S11-user 6.0 MRA58K 1524217265 release-keys"
-
-BUILD_FINGERPRINT := Itel/S11/S11:6.0/MRA58K/S11-I801-6.0-V070-180420:user/release-keys
