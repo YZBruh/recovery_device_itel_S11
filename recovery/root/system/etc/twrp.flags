@@ -1,0 +1,22 @@
+## İnitial fstab file
+
+# Main partitions (directly access)
+/system_image   ext4     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/system       flags=display=System-(Image);backup=1;flashimg=1
+
+# Other classic MTK partitions
+/protect_f      ext4     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/protect1     flags=display="PROTECT_F";backup=1;flashimg=1
+/protect_s      ext4     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/protect2     flags=display="PROTECT_S";backup=1;flashimg=1
+/nvdata         ext4     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/nvdata       flags=display="NVData";backup=1;flashimg=1
+/persistent     emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/frp          flags=display=Persistent;backup=1;flashimg=1
+/nvram          emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/nvram        flags=display=NVRam;backup=1;flashimg=1
+/proinfo        emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/proinfo      flags=display=PROİNFO;backup=1;flashimg=1
+/bootloader     emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/lk           flags=display=Bootloader;backup=1;flashimg=1
+/misc           emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/para         flags=display=MİSC;backup=1;flashimg=1
+/logo           emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/logo         flags=display=Logo;backup=1;flashimg=1
+/expdb          emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/expdb        flags=display=EXPDB;backup=1;flashimg=1
+/secro          emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/secro        flags=display=SECRO;backup=1;flashimg=1
+/seccfg         emmc     /dev/block/platform/mtk-msdc.0/11120000.msdc0/by-name/seccfg       flags=display=SECCFG;backup=1;flashimg=1
+
+# External Partitions
+/external_sd    auto     /dev/block/mmcblk0p1         /dev/block/mmcblk0                    flags=display="MicroSD-Card";storage;wipeingui;removable
+/usb_otg        auto     /dev/block/sda1              /dev/block/sda                        flags=display="USB-OTG";storage;wipeingui;removable
